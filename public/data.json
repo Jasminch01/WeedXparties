@@ -1,38 +1,38 @@
 {
   "services": [
-    {
+    { "id" : 1,
       "name": "Classic Wedding",
-      "image": "https://example.com/classic-wedding.jpg",
+      "image": "https://i.ibb.co/JvF1YTN/classic-weeding.jpg",
       "price": "$5,000",
       "description": "Our Classic Wedding Package is the epitome of timeless elegance and love. It's a celebration designed to turn your special day into an unforgettable experience, with meticulous attention to detail in every aspect. Imagine exchanging vows in a venue of unparalleled beauty and sophistication. Our Classic Wedding Package offers a choice of stunning venues, each with its unique allure. From historic mansions to grand ballrooms, you have the perfect backdrop to frame your love story. As you arrive, a warm welcome awaits you and your guests, setting the tone for a day of celebration and joy. Our culinary artisans craft a menu that is a culinary masterpiece, from delectable appetizers to exquisite desserts. Our wedding planners work closely with you to bring your vision to life. With the Classic Wedding Package, you also gain access to premium services, including professional photographers and a luxurious bridal suite. Click 'Learn More' to delve into the full details of our Classic Wedding Package."
     },
-    {
+    { "id":2,
       "name": "Outdoor Garden Wedding",
-      "image": "https://example.com/garden-wedding.jpg",
+      "image": "https://i.ibb.co/Tt0fWC1/outdoor-weeding.jpg",
       "price": "$4,500",
       "description": "The magic of an outdoor garden wedding awaits with our Outdoor Garden Wedding package. It offers the opportunity to exchange vows amidst lush greenery and fragrant blooms, creating an unforgettable experience. Picture walking down a flower-lined aisle with a gentle breeze carrying your vows to your loved one. Our garden venues provide the perfect backdrop for an intimate and romantic ceremony that leaves a lasting impression. Upon arrival, you'll be greeted with the tranquil sounds of nature and the scent of blossoms, setting a serene ambiance. Our culinary team crafts a menu that harmonizes with the garden setting, offering farm-to-table freshness and delectable seasonal delights. From garden-fresh salads to mouthwatering grilled entrees, every dish is a celebration of nature's bounty. Our wedding planners specialize in creating a garden wedding that matches your vision, from decor to lighting. With the Outdoor Garden Wedding package, you'll have access to professional photographers and videographers who capture every heartfelt moment. If the idea of celebrating your love amidst natural beauty appeals to you, click 'Learn More' to explore the full details."
     },
-    {
+    { "id": 3,
       "name": "Luxury Ballroom Wedding",
-      "image": "https://example.com/luxury-ballroom.jpg",
+      "image": "https://i.ibb.co/vzGY7DD/luxary-weeding.jpg",
       "price": "$7,500",
       "description": "Elegance and opulence take center stage with our Luxury Ballroom Wedding package, designed for couples who desire a wedding day filled with grandeur and sophistication. Imagine stepping into a world of timeless beauty, where crystal chandeliers hang from high ceilings, and sumptuous fabrics drape gracefully. Our luxurious ballroom venues provide the perfect backdrop for a wedding that exudes luxury and refinement. As you and your guests arrive, you'll be greeted with a sense of awe and wonder, taking in the breathtaking surroundings. The opulent atmosphere is enhanced by a welcome reception featuring gourmet hors d'oeuvres and champagne, setting the tone for an unforgettable evening. Our culinary team, renowned for their expertise, crafts a menu fit for royalty. From exquisite appetizers to decadent desserts, every bite is a culinary masterpiece. With the Luxury Ballroom Wedding package, our wedding planners work closely with you to select the perfect decor, color palette, and floral arrangements, ensuring your wedding vision is brought to life. Access to professional photographers and videographers is also included. Click 'Learn More' to explore the full details of our Luxury Ballroom Wedding package."
     },
-    {
+    { "id":4,
       "name": "Rustic Barn Wedding",
-      "image": "https://example.com/rustic-barn.jpg",
+      "image": "https://i.ibb.co/8j2hw71/rustic-brant-weeding.jpg",
       "price": "$4,000",
       "description": "Step into a world of rustic charm and romance with our Rustic Barn Wedding package. If you're drawn to the idea of a cozy and intimate wedding in a picturesque setting, this package is perfect for you. Imagine exchanging your vows under the open sky, surrounded by the warm embrace of a rustic barn venue. The natural beauty of the barn's wooden beams, exposed brick, and charming decor create an inviting and intimate atmosphere that is perfect for celebrating your love. As you and your guests arrive, you'll be greeted with the comforting scent of hay and the soft glow of fairy lights strung along the barn's ceiling. It's a setting that instantly puts everyone at ease, making your wedding day feel like a heartwarming celebration. Our culinary team embraces the rustic theme, offering a menu that celebrates comfort food and farm-fresh ingredients. From hearty appetizers to delightful comfort desserts, every dish is designed to evoke a sense of nostalgia and home. Our wedding planners specialize in creating a rustic ambiance that matches your vision, from mason jar centerpieces to wooden signage. Access to professional photographers and videographers is also included. Click 'Learn More' to explore the full details of our Rustic Barn Wedding package."
     },
-    {
+    { "id" :5,
       "name": "Beachfront Wedding",
-      "image": "https://example.com/beachfront-wedding.jpg",
+      "image": "https://i.ibb.co/JjzFG0b/beach-wedding.jpg",
       "price": "$6,000",
       "description": "Experience the ultimate romantic getaway with our Beachfront Wedding package, where the soothing sound of waves and the breathtaking beauty of the beach become the backdrop to your love story. Imagine the sun setting over the horizon as you and your beloved exchange vows on the sandy shores, with the gentle ocean breeze caressing your faces. Our Beachfront Wedding package offers the perfect blend of natural beauty and seaside serenity for your special day. As you and your guests arrive, you'll be welcomed by the tranquil sounds of the waves and the salty scent of the ocean, setting a relaxed and romantic atmosphere. Your beachfront wedding is an opportunity to celebrate your love with the serene backdrop of endless ocean views. Our culinary team takes inspiration from the sea, crafting a menu that highlights fresh seafood and coastal flavors. From succulent lobster bisque to grilled catch-of-the-day, every bite transports your taste buds to the coastal paradise. Access to professional photographers and videographers is also included. Click 'Learn More' to explore the full details of our Beachfront Wedding package."
     },
-    {
+    { "id": 6,
       "name": "Intimate Elopement",
-      "image": "https://example.com/elopement-package.jpg",
+      "image": "https://i.ibb.co/5KGKvjR/eloperment-weeding-2.jpg",
       "price": "$2,500",
       "description": "For those seeking an intimate and profoundly personal celebration of love, our Intimate Elopement Package offers a heartfelt experience that focuses solely on you and your beloved. Imagine a day where the world fades away, and it's just the two of you, surrounded by the love that brought you together. Our Intimate Elopement Package is designed for couples who prefer a small and meaningful ceremony, free from the distractions of a larger event.\n\nAs you and your beloved arrive at your chosen elopement location, you'll be enveloped in an atmosphere of intimacy and simplicity. Whether it's a secluded garden, a charming chapel, or a breathtaking mountaintop, your elopement venue will be a reflection of your love story.\n\nYour elopement day is about the two of you, and we ensure that every detail caters to your desires. Our dedicated team will assist in planning a ceremony that is deeply personal and meaningful. From vows exchanged under a canopy of trees to a candlelit evening ceremony, your elopement will be a reflection of your unique connection.\n\nOur culinary offerings for elopements are equally intimate, with a menu designed to suit your tastes and preferences. From a romantic picnic for two to a gourmet three-course meal, every dish is crafted with love and care.\n\nWith the Intimate Elopement Package, you'll also have access to photographers and videographers who specialize in capturing the essence of intimate celebrations. The result? A collection of photos and videos that chronicle the depth of your love in every frame.\n\nIf the idea of an intimate and heartfelt elopement speaks to your soul, then our Intimate Elopement Package is perfect for you. Click 'Learn More' to explore the full details and embark on a journey of love, simplicity, and profound connection."
     }
