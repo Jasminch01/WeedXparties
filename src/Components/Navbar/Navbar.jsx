@@ -4,11 +4,11 @@ import { useContext } from "react";
 import { ContextProvider } from "../../Context/Context";
 
 const Navbar = () => {
-  const {user, logOut} = useContext(ContextProvider);
+  const { user, logOut } = useContext(ContextProvider);
 
-  const logOutHandle = ()=>{
-    logOut()
-  }
+  const logOutHandle = () => {
+    logOut();
+  };
   const links = (
     <>
       <li>
@@ -16,7 +16,11 @@ const Navbar = () => {
         <NavLink
           to="/"
           className={({ isActive, isPending }) =>
-            isPending ? "pending" : isActive ? "bg-rose-500 text-white p-3" : "p-3"
+            isPending
+              ? "pending"
+              : isActive
+              ? "bg-rose-500 text-white p-3"
+              : "p-3"
           }
         >
           Home
@@ -27,7 +31,11 @@ const Navbar = () => {
         <NavLink
           to="/gallery"
           className={({ isActive, isPending }) =>
-            isPending ? "pending" : isActive ? "bg-rose-500 text-white p-3" : "p-3"
+            isPending
+              ? "pending"
+              : isActive
+              ? "bg-rose-500 text-white p-3"
+              : "p-3"
           }
         >
           Gallary
@@ -38,7 +46,11 @@ const Navbar = () => {
         <NavLink
           to="/contact"
           className={({ isActive, isPending }) =>
-            isPending ? "pending" : isActive ? "bg-rose-500 text-white p-3" : "p-3"
+            isPending
+              ? "pending"
+              : isActive
+              ? "bg-rose-500 text-white p-3"
+              : "p-3"
           }
         >
           Contact us
@@ -48,7 +60,7 @@ const Navbar = () => {
   );
   return (
     <div className="w-[80%] mx-auto">
-      <div className="navbar bg-transparent">
+      <div className="navbar">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -73,44 +85,70 @@ const Navbar = () => {
             >
               {links}
             </ul>
-            <a className=" normal-case text-2xl text-rose-500 font-bold">WedXpertes</a>
           </div>
+          <p className="md:text-3xl text-rose-500 font-bold">WedXpertes</p>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{links}</ul>
         </div>
         <div className="navbar-end">
-          <div className="dropdown">
+          <div className="dropdown relative">
             <label tabIndex={0} className="">
               <img
-                src={ user ? (user.photoURL !== null ? user.photoURL : defaultProfile) : defaultProfile }
+                src={
+                  user
+                    ? user.photoURL !== null
+                      ? user.photoURL
+                      : defaultProfile
+                    : defaultProfile
+                }
                 alt=""
                 className="w-10 rounded-full"
               />
             </label>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-32"
+              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-32 absolute right-0"
             >
               <li className="cursor-pointer hover:bg-slate-300 p-3">
                 {user?.displayName ? user.displayName : "User"}
               </li>
               <li className="cursor-pointer hover:bg-slate-300 p-3">Profile</li>
               <li className="cursor-pointer hover:bg-slate-300 p-3">Setting</li>
+              <li className="cursor-pointer hover:bg-slate-300 p-3">{!user ? (
+              <Link
+                to="/login"
+                className="cursor-pointer"
+              >
+                Log in
+              </Link>
+            ) : (
+              <button
+                onClick={logOutHandle}
+                className="cursor-pointer"
+              >
+                Log out
+              </button>
+            )}</li>
             </ul>
           </div>
-          {!user ? (
-            <Link
-              to="/login"
-              className="p-2 bg-rose-500 text-white ms-3 cursor-pointer"
-            >
-              Log in
-            </Link>
-          ) : (
-            <button onClick={logOutHandle} className="p-2 bg-rose-500 text-white ms-3 cursor-pointer">
-              Log out
-            </button>
-          )}
+          <div className="md:flex hidden">
+            {!user ? (
+              <Link
+                to="/login"
+                className="p-2 bg-rose-500 text-white ms-3 cursor-pointer"
+              >
+                Log in
+              </Link>
+            ) : (
+              <button
+                onClick={logOutHandle}
+                className="p-2 bg-rose-500 text-white ms-3 cursor-pointer"
+              >
+                Log out
+              </button>
+            )}
+          </div>
         </div>
       </div>
     </div>

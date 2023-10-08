@@ -2,14 +2,14 @@ const Banner = () => {
   return (
     <div className="w-[80%] mx-auto">
       <div data-aos= 'fade-up'
-        className="hero h-[50vh]  rounded"
+        className="hero md:h-[50vh]  rounded"
         style={{
           backgroundImage: "url(https://i.ibb.co/kMKjRJT/wedding-banner.jpg)",
         }}
       >
         <div className="hero-overlay bg-opacity-60 rounded"></div>
         <div className="text-center" data-aos = 'zoom-in'>
-          <h1 className="mb-5 text-white text-5xl font-bold">
+          <h1 className="mb-5 text-white md:text-5xl text-2xl font-bold">
             Your Love Story <br />{" "}
             <span className="text-rose-500">Begins Here</span>{" "}
           </h1>

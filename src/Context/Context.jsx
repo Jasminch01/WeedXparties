@@ -19,6 +19,7 @@ const Context = ({ children }) => {
   const [loading, setLoading] = useState('')
 
   useState(() => {
+    setLoading(true)
     fetch("/gallery.json")
       .then((res) => res.json())
       .then((data) => setimages(data));
