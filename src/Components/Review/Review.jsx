@@ -1,8 +1,5 @@
 import Swipers from "../Swipers/Swipers";
-
-
 const Review = () => {
-
 
   return (
     <div className="w-[80%] mx-auto my-20">

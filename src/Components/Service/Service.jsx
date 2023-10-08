@@ -16,7 +16,7 @@ const Service = ({ service }) => {
           <p>{description.length > 20 && description.slice(0,100)}</p>
           <p className="text-xl my-3"><span className="font-semibold">Price :</span> {price}</p>
           <div className=" text-center my-5">
-            <button className="p-3 border border-rose-500 hover:bg-rose-500 hover:text-white rounded-full">Learn more</button>
+            <button className="p-3 border text-rose-500 border-rose-500 hover:bg-rose-500 hover:text-white rounded-full">Learn more</button>
           </div>
         </div>
       </div>

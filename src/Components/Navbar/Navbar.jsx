@@ -9,7 +9,7 @@ const Navbar = () => {
         <NavLink
           to="/"
           className={({ isActive, isPending }) =>
-            isPending ? "pending" : isActive ? "bg-rose-500 text-white" : ""
+            isPending ? "pending" : isActive ? "bg-rose-500 text-white p-3" : "p-3"
           }
         >
           Home
@@ -20,7 +20,7 @@ const Navbar = () => {
         <NavLink
           to="/gallery"
           className={({ isActive, isPending }) =>
-            isPending ? "pending" : isActive ? "bg-rose-500 text-white" : ""
+            isPending ? "pending" : isActive ? "bg-rose-500 text-white p-3" : "p-3"
           }
         >
           Gallary
@@ -31,7 +31,7 @@ const Navbar = () => {
         <NavLink
           to="/services"
           className={({ isActive, isPending }) =>
-            isPending ? "pending" : isActive ? "bg-rose-500 text-white" : ""
+            isPending ? "pending" : isActive ? "bg-rose-500 text-white p-3" : "p-3"
           }
         >
           Services
