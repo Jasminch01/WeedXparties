@@ -3,6 +3,9 @@ import Layout from "../Layout/Layout";
 import Home from "../Pages/Home/Home";
 import Error from "../Pages/Error/Error";
 import Gallery from "../Pages/Gallery/Gallery";
+import Details from "../Components/Details/Details";
+import Login from "../Components/LogIn/Login";
+import Register from "../Components/Register/Register";
 
 const router = createBrowserRouter([
     {
@@ -21,6 +24,19 @@ const router = createBrowserRouter([
             {
                 path : '/services',
                 element : <div></div>
+            },
+            {
+                path : '/details/:id',
+                element : <Details></Details>,
+                loader : ()=> fetch('data.json')
+            },
+            {
+                path : '/login',
+                element : <Login></Login>
+            },
+            {
+                path : '/register',
+                element : <Register></Register>
             }
         ]
     }

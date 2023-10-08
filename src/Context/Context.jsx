@@ -1,7 +1,11 @@
 import { createContext, useState } from "react";
 import PropTypes from 'prop-types';
+import { GoogleAuthProvider, createUserWithEmailAndPassword, signInWithPopup } from "firebase/auth";
+import auth from "../Firebase/Firebase.config";
 
-export const  ContextProvider = createContext()
+export const  ContextProvider = createContext();
+const googleProvider = new GoogleAuthProvider()
+
 
 const Context = ({children}) => {
     const [images, setimages] = useState([]);
@@ -12,8 +16,19 @@ const Context = ({children}) => {
         .then((data) => setimages(data));
     }, []);
 
+    const googleSignIn = ()=>{
+        return signInWithPopup(auth, googleProvider)
+    }
+
+    const createUserEmailPass = (email, password) => {
+        return createUserWithEmailAndPassword(auth, email, password)
+    }
+
     const data = {
         images,
+        googleSignIn,
+        createUserEmailPass,
+
     }
 
     return (
