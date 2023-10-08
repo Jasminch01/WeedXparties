@@ -6,6 +6,7 @@ import Gallery from "../Pages/Gallery/Gallery";
 import Details from "../Components/Details/Details";
 import Login from "../Components/LogIn/Login";
 import Register from "../Components/Register/Register";
+import PrivetRoute from "./PrivetRoute";
 
 const router = createBrowserRouter([
     {
@@ -19,16 +20,16 @@ const router = createBrowserRouter([
             },
             {
                 path : '/gallery',
-                element : <Gallery></Gallery>
+                element : <PrivetRoute> <Gallery></Gallery></PrivetRoute>
             },
             {
-                path : '/services',
+                path : '/contact',
                 element : <div></div>
             },
             {
                 path : '/details/:id',
-                element : <Details></Details>,
-                loader : ()=> fetch('data.json')
+                element : <PrivetRoute> <Details></Details> </PrivetRoute>,
+                loader : ()=> fetch('/data.json')
             },
             {
                 path : '/login',

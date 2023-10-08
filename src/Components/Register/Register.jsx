@@ -1,6 +1,45 @@
+import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
+import { ContextProvider } from "../../Context/Context";
+import { HiMiniEyeSlash, HiMiniEye } from "react-icons/hi2";
 
 const Register = () => {
+  const { createUserEmailPass } = useContext(ContextProvider);
+  const [isShow, setIsShow] = useState("");
+  const [createError, setCreateError] = useState(" ");
+  const [success, setSuccess] = useState(" ");
+
+  const createUserHandler = (e) => {
+    e.preventDefault();
+    const form = new FormData(e.currentTarget);
+    const email = form.get("email");
+    const password = form.get("password");
+
+    setCreateError(" ");
+    setSuccess(" ");
+
+    if (
+      !/^(?=.*[A-Z])(?=.*[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]).{6,}$/.test(
+        password
+      )
+    ) {
+      return setCreateError("please set strong password");
+    } else if (
+      !/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(email)
+    ) {
+      return setCreateError("please provide a valid email address");
+    }
+
+    createUserEmailPass(email, password)
+    .then((res) => {
+      console.log(res.user);
+      setSuccess("account created succesfully");
+    })
+    .catch(error => {
+      setCreateError(error.message.slice(22,42))
+    })
+  };
+
   return (
     <div>
       <div className="hero min-h-screen ">
@@ -11,7 +50,7 @@ const Register = () => {
             </p>
           </div>
           <div className="w-full shadow-2xl lg:w-96">
-            <form className="card-body">
+            <form onSubmit={createUserHandler} className="card-body">
               <div className="form-control">
                 <label className="label">
                   <span className="label-text">Full Name</span>
@@ -48,17 +87,27 @@ const Register = () => {
                   required
                 />
               </div>
-              <div className="form-control">
+              <div className="form-control relative">
                 <label className="label">
                   <span className="label-text">Password</span>
                 </label>
                 <input
-                  type="password"
+                  type={isShow ? "text" : "password"}
                   name="password"
                   placeholder="password"
                   className="input input-bordered"
                   required
                 />
+                <span
+                  onClick={() => setIsShow(!isShow)}
+                  className="absolute right-3 top-14"
+                >
+                  {!isShow ? (
+                    <HiMiniEye></HiMiniEye>
+                  ) : (
+                    <HiMiniEyeSlash></HiMiniEyeSlash>
+                  )}
+                </span>
               </div>
               <div className="form-control mt-6">
                 <button className="btn btn-primary">Register</button>
@@ -72,6 +121,12 @@ const Register = () => {
                 </p>
               </div>
             </form>
+          </div>
+          <div className="mt-10">
+            {createError && (
+              <p className="text-sm text-red-400 text-center">{createError}</p>
+            )}
+            {success && <p className="text-sm text-green-500 text-center">{success}</p>}
           </div>
         </div>
       </div>

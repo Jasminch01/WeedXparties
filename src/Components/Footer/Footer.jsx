@@ -5,7 +5,7 @@ const Footer = () => {
         <aside>
           <p className="font-bold ">
            <span className="text-2xl">WedXparties</span>  <br />
-            Providing reliable tech since 1992
+            Providing Best Wedding Event services since 1992
           </p>
           <p>Copyright © 2023 - All right reserved</p>
         </aside>

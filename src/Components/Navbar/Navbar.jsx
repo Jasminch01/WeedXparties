@@ -1,7 +1,14 @@
 import { Link, NavLink } from "react-router-dom";
 import defaultProfile from "../../assets/user.png";
+import { useContext } from "react";
+import { ContextProvider } from "../../Context/Context";
 
 const Navbar = () => {
+  const {user, logOut} = useContext(ContextProvider);
+
+  const logOutHandle = ()=>{
+    logOut()
+  }
   const links = (
     <>
       <li>
@@ -29,12 +36,12 @@ const Navbar = () => {
       <li>
         {" "}
         <NavLink
-          to="/services"
+          to="/contact"
           className={({ isActive, isPending }) =>
             isPending ? "pending" : isActive ? "bg-rose-500 text-white p-3" : "p-3"
           }
         >
-          Services
+          Contact us
         </NavLink>{" "}
       </li>
     </>
@@ -73,8 +80,37 @@ const Navbar = () => {
           <ul className="menu menu-horizontal px-1">{links}</ul>
         </div>
         <div className="navbar-end">
-          <img src={defaultProfile} alt="" className="w-12" />
-          <button className="p-2 bg-rose-500 text-white ms-3"> <Link to= '/login'>Log in</Link> </button>
+          <div className="dropdown">
+            <label tabIndex={0} className="">
+              <img
+                src={ user ? (user.photoURL !== null ? user.photoURL : defaultProfile) : defaultProfile }
+                alt=""
+                className="w-10 rounded-full"
+              />
+            </label>
+            <ul
+              tabIndex={0}
+              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-32"
+            >
+              <li className="cursor-pointer hover:bg-slate-300 p-3">
+                {user?.displayName ? user.displayName : "User"}
+              </li>
+              <li className="cursor-pointer hover:bg-slate-300 p-3">Profile</li>
+              <li className="cursor-pointer hover:bg-slate-300 p-3">Setting</li>
+            </ul>
+          </div>
+          {!user ? (
+            <Link
+              to="/login"
+              className="p-2 bg-rose-500 text-white ms-3 cursor-pointer"
+            >
+              Log in
+            </Link>
+          ) : (
+            <button onClick={logOutHandle} className="p-2 bg-rose-500 text-white ms-3 cursor-pointer">
+              Log out
+            </button>
+          )}
         </div>
       </div>
     </div>
