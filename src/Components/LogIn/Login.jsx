@@ -32,7 +32,10 @@ const Login = () => {
   };
 
   const socialLogInHandler = (social) => {
-    social();
+    social()
+    .then(()=>{
+      navigate(location?.state? location.state : '/')
+    })
   };
 
  

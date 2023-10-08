@@ -7,6 +7,7 @@ import Details from "../Components/Details/Details";
 import Login from "../Components/LogIn/Login";
 import Register from "../Components/Register/Register";
 import PrivetRoute from "./PrivetRoute";
+import Contact from "../Components/Contact/Contact";
 
 const router = createBrowserRouter([
     {
@@ -24,7 +25,7 @@ const router = createBrowserRouter([
             },
             {
                 path : '/contact',
-                element : <div></div>
+                element : <PrivetRoute> <Contact></Contact> </PrivetRoute>
             },
             {
                 path : '/details/:id',
