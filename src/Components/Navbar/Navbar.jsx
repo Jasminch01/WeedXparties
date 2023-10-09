@@ -86,7 +86,7 @@ const Navbar = () => {
               {links}
             </ul>
           </div>
-          <p className="md:text-3xl text-rose-500 font-bold">WedXpertes</p>
+          <p className="md:text-3xl text-rose-500 font-bold">WedXpertise</p>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{links}</ul>
@@ -105,7 +105,7 @@ const Navbar = () => {
                 alt=""
                 className="w-9 rounded-full ring-2 ring-green-500 outline-offset-2"
               />
-              <span className="text-center">{user?.displayName ? user.displayName.slice(0,6) : "User"}</span>
+              <span className="text-center">{user?.displayName ? user.displayName.slice(0,6) : " "}</span>
             </label>
             <ul
               tabIndex={0}
