@@ -7,6 +7,7 @@ import {
   signInWithEmailAndPassword,
   signInWithPopup,
   signOut,
+  updateProfile,
 } from "firebase/auth";
 import auth from "../Firebase/Firebase.config";
 
@@ -55,6 +56,12 @@ const Context = ({ children }) => {
     return signOut(auth);
   };
 
+  const  updateUserProfile = ( createdUser,name, photoURL) => {
+    return updateProfile(createdUser, {
+      displayName: name , photoURL: photoURL ? photoURL : "https://example.com/jane-q-user/profile.jpg"
+    })
+  }
+
   const data = {
     images,
     googleSignIn,
@@ -62,7 +69,8 @@ const Context = ({ children }) => {
     signInEmailPass,
     user,
     logOut,
-    loading
+    loading,
+    updateUserProfile
   };
 
   return (

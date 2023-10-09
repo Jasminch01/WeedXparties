@@ -7,7 +7,8 @@ import Details from "../Components/Details/Details";
 import Login from "../Components/LogIn/Login";
 import Register from "../Components/Register/Register";
 import PrivetRoute from "./PrivetRoute";
-import Contact from "../Components/Contact/Contact";
+import Contact from "../Pages/Contact/Contact";
+
 
 const router = createBrowserRouter([
     {

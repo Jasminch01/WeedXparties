@@ -1,19 +1,26 @@
 import { useContext, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { ContextProvider } from "../../Context/Context";
 import { HiMiniEyeSlash, HiMiniEye } from "react-icons/hi2";
 
 const Register = () => {
-  const { createUserEmailPass } = useContext(ContextProvider);
+  const { createUserEmailPass,  updateUserProfile } = useContext(ContextProvider);
   const [isShow, setIsShow] = useState("");
   const [createError, setCreateError] = useState(" ");
   const [success, setSuccess] = useState(" ");
+
+  const location = useLocation();
+  const navigate  = useNavigate();
 
   const createUserHandler = (e) => {
     e.preventDefault();
     const form = new FormData(e.currentTarget);
     const email = form.get("email");
     const password = form.get("password");
+    const name = form.get("name");
+    const photoURL = form.get("photo");
+
+    console.log(email, password, name, photoURL)
 
     setCreateError(" ");
     setSuccess(" ");
@@ -32,8 +39,14 @@ const Register = () => {
 
     createUserEmailPass(email, password)
     .then((res) => {
-      console.log(res.user);
+      const createdUser = (res.user)
       setSuccess("account created succesfully");
+
+      updateUserProfile( createdUser, name, photoURL)
+      .then(()=>{
+        navigate(location?.state? location.state : '/')
+      })
+
     })
     .catch(error => {
       setCreateError(error.message.slice(22,42))

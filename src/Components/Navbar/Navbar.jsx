@@ -38,7 +38,7 @@ const Navbar = () => {
               : "p-3"
           }
         >
-          Gallary
+          Gallery
         </NavLink>{" "}
       </li>
       <li>
@@ -60,7 +60,7 @@ const Navbar = () => {
   );
   return (
     <div className="w-[80%] mx-auto">
-      <div className="navbar">
+      <div className="navbar p-4">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -93,7 +93,7 @@ const Navbar = () => {
         </div>
         <div className="navbar-end">
           <div className="dropdown relative">
-            <label tabIndex={0} className="">
+            <label tabIndex={0} className="flex flex-col justify-center items-center">
               <img
                 src={
                   user
@@ -103,14 +103,15 @@ const Navbar = () => {
                     : defaultProfile
                 }
                 alt=""
-                className="w-10 rounded-full ring-2 ring-green-500 outline-offset-2"
+                className="w-9 rounded-full ring-2 ring-green-500 outline-offset-2"
               />
+              <span className="text-center">{user?.displayName ? user.displayName.slice(0,6) : "User"}</span>
             </label>
             <ul
               tabIndex={0}
               className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-32 absolute right-0  md:-right-24"
             >
-              <li className="cursor-pointer hover:bg-slate-300 p-3">
+              <li className="cursor-pointer hover:bg-slate-300 p-3 md:hidden">
                 {user?.displayName ? user.displayName : "User"}
               </li>
               <li className="cursor-pointer hover:bg-slate-300 p-3">Profile</li>
