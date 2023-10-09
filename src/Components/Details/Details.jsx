@@ -10,7 +10,7 @@ const Details = () => {
     const services = useLoaderData();
     const serviceDetails = services.services.find(service => service.id === intId);
 
-    const {description , image, name} = serviceDetails;
+    const {description , image, event_name, service, details} = serviceDetails;
 
     useEffect(() => {
         AOS.init({
@@ -21,13 +21,15 @@ const Details = () => {
 
     return (
         <div className="w-[80%] mx-auto">
-            <div className="py-20">
+            <div className="py-20 w-[50%] mx-auto">
                 <div data-aos = 'zoom-in'>
                     <img src= {image} alt="" className="w-full rounded-lg" />
                 </div>
                 <div data-aos='fade-up' className="space-y-4 mt-4">
-                    <p className="text-2xl font-bold">{name}</p>
-                    <p>{description}</p>
+                    <p className="text-2xl font-bold">{event_name}</p>
+                    <p className="font-bold text-xl">{description}</p>
+                    <p>{details}</p>
+                    <p><span className="font-bold">Services : </span>{service}</p>
                 </div>
             </div>
         </div>

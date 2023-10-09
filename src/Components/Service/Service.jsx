@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 const Service = ({ service }) => {
-  const {id, name, image, price, description} = service;
+  const {id, event_name, image, price, description} = service;
   return (
     <div>
       <div data-aos = "flip-right" className="flex flex-col border shadow-sm p-5 rounded hover:transform hover:scale-105 hover:bg-slate-100 transition-transform duration-300">
@@ -13,7 +13,7 @@ const Service = ({ service }) => {
           />
         </div>
         <div className="text-center flex-grow">
-          <h2 data-aos = 'fade-down' className="text-2xl font-medium">{name}</h2>
+          <h2 data-aos = 'fade-down' className="text-2xl font-medium">{event_name}</h2>
           <p data-aos = 'zoom-in-up'>{description.length > 20 && description.slice(0,100)}</p>
           <p data-aos = 'fade-left' className="text-xl my-3"><span className="font-semibold">Price :</span> {price}</p>
           <div data-aos='fade-up' className=" text-center my-5">

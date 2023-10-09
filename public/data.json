@@ -1,40 +1,55 @@
 {
   "services": [
-    { "id" : 1,
-      "name": "Classic Wedding",
-      "image": "https://i.ibb.co/JvF1YTN/classic-weeding.jpg",
+    { "id": 1,
+      "event_name": "Engagement Party",
+      "description": "An exuberant gathering to commemorate the joyful engagement of the couple, uniting family and friends in celebration.",
+      "details": "The engagement party is a prelude to the grand wedding ceremony, often characterized by an atmosphere of relaxed jubilation. Guests come together to offer heartfelt congratulations and bestow thoughtful gifts upon the engaged couple. It's a momentous occasion filled with laughter, smiles, and well-wishing as the couple begins their journey towards a lifetime of love and togetherness.",
+      "image": "https://i.ibb.co/x6gNgQ2/engestment.jpg",
       "price": "$5,000",
-      "description": "Our Classic Wedding Package is the epitome of timeless elegance and love. It's a celebration designed to turn your special day into an unforgettable experience, with meticulous attention to detail in every aspect. Imagine exchanging vows in a venue of unparalleled beauty and sophistication. Our Classic Wedding Package offers a choice of stunning venues, each with its unique allure. From historic mansions to grand ballrooms, you have the perfect backdrop to frame your love story. As you arrive, a warm welcome awaits you and your guests, setting the tone for a day of celebration and joy. Our culinary artisans craft a menu that is a culinary masterpiece, from delectable appetizers to exquisite desserts. Our wedding planners work closely with you to bring your vision to life. With the Classic Wedding Package, you also gain access to premium services, including professional photographers and a luxurious bridal suite. Click 'Learn More' to delve into the full details of our Classic Wedding Package."
+      "service": "Event planning, catering, decorations, and invitations are essential services that contribute to the success of this event. Event planners assist in creating a seamless experience, catering services provide delectable dishes, decorators transform the venue into a festive space, and invitations set the tone for the celebration."
     },
-    { "id":2,
-      "name": "Outdoor Garden Wedding",
-      "image": "https://i.ibb.co/Tt0fWC1/outdoor-weeding.jpg",
+    { "id" : 2,
+      "event_name": "Bridal Shower",
+      "description": "A heartwarming pre-wedding festivity organized in honor of the bride, designed to shower her with love, gifts, and cherished memories.",
+      "details": "Bridal showers are an intimate affair where the bride is surrounded by her closest friends and family. The event revolves around gift-giving, playful games, and heartfelt conversations. It is an opportunity for loved ones to express their love and support for the bride as she prepares to embark on her marital journey. These gatherings are infused with warmth, laughter, and anticipation, creating lasting memories for the bride and her inner circle.",
+      "image": "https://i.ibb.co/JdFrtqx/bridal-shower.jpg",
       "price": "$4,500",
-      "description": "The magic of an outdoor garden wedding awaits with our Outdoor Garden Wedding package. It offers the opportunity to exchange vows amidst lush greenery and fragrant blooms, creating an unforgettable experience. Picture walking down a flower-lined aisle with a gentle breeze carrying your vows to your loved one. Our garden venues provide the perfect backdrop for an intimate and romantic ceremony that leaves a lasting impression. Upon arrival, you'll be greeted with the tranquil sounds of nature and the scent of blossoms, setting a serene ambiance. Our culinary team crafts a menu that harmonizes with the garden setting, offering farm-to-table freshness and delectable seasonal delights. From garden-fresh salads to mouthwatering grilled entrees, every dish is a celebration of nature's bounty. Our wedding planners specialize in creating a garden wedding that matches your vision, from decor to lighting. With the Outdoor Garden Wedding package, you'll have access to professional photographers and videographers who capture every heartfelt moment. If the idea of celebrating your love amidst natural beauty appeals to you, click 'Learn More' to explore the full details."
+      "service": "Service providers play a crucial role in bringing the bridal shower to life. Venue rentals offer a suitable space for the event, gift registries simplify gift-giving, games and activities keep guests engaged, and catering ensures delightful refreshments and treats for all attendees."
     },
-    { "id": 3,
-      "name": "Luxury Ballroom Wedding",
-      "image": "https://i.ibb.co/vzGY7DD/luxary-weeding.jpg",
+    { "id" :3,
+      "event_name": "Bachelor and Bachelorette Parties",
+      "description": "Vibrant pre-wedding festivities held for the bride and groom, offering them a final taste of singlehood with their closest friends.",
+      "details": "Bachelor and bachelorette parties come in various forms, from relaxed dinners to adventurous getaways. These gatherings are an opportunity for the bride and groom to create cherished memories with their closest friends before stepping into married life. Whether it's a night of laughter and camaraderie or an adrenaline-fueled adventure, these parties symbolize the transition from singlehood to wedded bliss.",
+      "image": "https://i.ibb.co/Yf9nd6q/Bachelor-and-Bachelorette-Parties.jpg",
       "price": "$7,500",
-      "description": "Elegance and opulence take center stage with our Luxury Ballroom Wedding package, designed for couples who desire a wedding day filled with grandeur and sophistication. Imagine stepping into a world of timeless beauty, where crystal chandeliers hang from high ceilings, and sumptuous fabrics drape gracefully. Our luxurious ballroom venues provide the perfect backdrop for a wedding that exudes luxury and refinement. As you and your guests arrive, you'll be greeted with a sense of awe and wonder, taking in the breathtaking surroundings. The opulent atmosphere is enhanced by a welcome reception featuring gourmet hors d'oeuvres and champagne, setting the tone for an unforgettable evening. Our culinary team, renowned for their expertise, crafts a menu fit for royalty. From exquisite appetizers to decadent desserts, every bite is a culinary masterpiece. With the Luxury Ballroom Wedding package, our wedding planners work closely with you to select the perfect decor, color palette, and floral arrangements, ensuring your wedding vision is brought to life. Access to professional photographers and videographers is also included. Click 'Learn More' to explore the full details of our Luxury Ballroom Wedding package."
+      "service": "Service providers contribute to the success of these parties by assisting in event planning, arranging transportation for groups, organizing entertainment, and ensuring comfortable accommodations for all participants."
     },
-    { "id":4,
-      "name": "Rustic Barn Wedding",
-      "image": "https://i.ibb.co/8j2hw71/rustic-brant-weeding.jpg",
-      "price": "$4,000",
-      "description": "Step into a world of rustic charm and romance with our Rustic Barn Wedding package. If you're drawn to the idea of a cozy and intimate wedding in a picturesque setting, this package is perfect for you. Imagine exchanging your vows under the open sky, surrounded by the warm embrace of a rustic barn venue. The natural beauty of the barn's wooden beams, exposed brick, and charming decor create an inviting and intimate atmosphere that is perfect for celebrating your love. As you and your guests arrive, you'll be greeted with the comforting scent of hay and the soft glow of fairy lights strung along the barn's ceiling. It's a setting that instantly puts everyone at ease, making your wedding day feel like a heartwarming celebration. Our culinary team embraces the rustic theme, offering a menu that celebrates comfort food and farm-fresh ingredients. From hearty appetizers to delightful comfort desserts, every dish is designed to evoke a sense of nostalgia and home. Our wedding planners specialize in creating a rustic ambiance that matches your vision, from mason jar centerpieces to wooden signage. Access to professional photographers and videographers is also included. Click 'Learn More' to explore the full details of our Rustic Barn Wedding package."
+    { "id" : 4,
+      "event_name": "Rehearsal Dinner",
+      "description": "An intimate pre-wedding dinner where close family and the wedding party gather to rehearse and celebrate the upcoming nuptials.",
+      "details": "Held on the eve of the wedding, the rehearsal dinner is an occasion of intimacy and camaraderie. It provides an opportunity for the key participants in the wedding to familiarize themselves with the ceremony logistics while enjoying a memorable meal together. It's a heartfelt gesture of appreciation for those who will play pivotal roles in the wedding.",
+      "image": "https://i.ibb.co/FxFWQ7v/Rehearsal-Dinner.jpg",
+      "price" : "$2,500",
+      "service": "Service providers like caterers, venue rentals, transportation services, and decorators play a vital role in ensuring the rehearsal dinner runs smoothly. They contribute to the atmosphere of warmth and celebration."
     },
-    { "id" :5,
-      "name": "Beachfront Wedding",
-      "image": "https://i.ibb.co/JjzFG0b/beach-wedding.jpg",
+    { "id" : 5,
+      "event_name": "Wedding Ceremony",
+      "description": "The poignant exchange of vows and rings, symbolizing the official union of the couple, often set in a meaningful location.",
+      "details": "The wedding ceremony is the heart of the entire wedding celebration. It's the moment when the couple publicly declares their commitment to each other in front of their loved ones. The choice of location, whether it's a place of worship, a serene garden, or a destination far from home, adds a personal touch to the proceedings, making it a cherished memory for all in attendance.",
+      "image": "https://i.ibb.co/Tt0fWC1/outdoor-weeding.jpg",
       "price": "$6,000",
-      "description": "Experience the ultimate romantic getaway with our Beachfront Wedding package, where the soothing sound of waves and the breathtaking beauty of the beach become the backdrop to your love story. Imagine the sun setting over the horizon as you and your beloved exchange vows on the sandy shores, with the gentle ocean breeze caressing your faces. Our Beachfront Wedding package offers the perfect blend of natural beauty and seaside serenity for your special day. As you and your guests arrive, you'll be welcomed by the tranquil sounds of the waves and the salty scent of the ocean, setting a relaxed and romantic atmosphere. Your beachfront wedding is an opportunity to celebrate your love with the serene backdrop of endless ocean views. Our culinary team takes inspiration from the sea, crafting a menu that highlights fresh seafood and coastal flavors. From succulent lobster bisque to grilled catch-of-the-day, every bite transports your taste buds to the coastal paradise. Access to professional photographers and videographers is also included. Click 'Learn More' to explore the full details of our Beachfront Wedding package."
+      "service": "A multitude of service providers, including officiants, venue rentals, decorators, photographers, musicians, and floral designers, come together to create a harmonious and beautiful ceremony."
     },
-    { "id": 6,
-      "name": "Intimate Elopement",
-      "image": "https://i.ibb.co/5KGKvjR/eloperment-weeding-2.jpg",
+    { "id" : 6,
+      "event_name": "Wedding Reception",
+      "description": "A festive celebration following the wedding ceremony, complete with a sumptuous meal, lively dancing, and heartfelt toasts.",
+      "details": "The wedding reception is the grand finale of the wedding festivities, an exuberant party where guests come together to celebrate the newlyweds' union. It includes traditions like the first dance, cutting the wedding cake, and touching speeches. It's a time for joy, laughter, and dancing the night away, creating unforgettable memories for all.",
+      "image": "https://i.ibb.co/FwfKqRB/Wedding-Reception.jpg",
       "price": "$2,500",
-      "description": "For those seeking an intimate and profoundly personal celebration of love, our Intimate Elopement Package offers a heartfelt experience that focuses solely on you and your beloved. Imagine a day where the world fades away, and it's just the two of you, surrounded by the love that brought you together. Our Intimate Elopement Package is designed for couples who prefer a small and meaningful ceremony, free from the distractions of a larger event.\n\nAs you and your beloved arrive at your chosen elopement location, you'll be enveloped in an atmosphere of intimacy and simplicity. Whether it's a secluded garden, a charming chapel, or a breathtaking mountaintop, your elopement venue will be a reflection of your love story.\n\nYour elopement day is about the two of you, and we ensure that every detail caters to your desires. Our dedicated team will assist in planning a ceremony that is deeply personal and meaningful. From vows exchanged under a canopy of trees to a candlelit evening ceremony, your elopement will be a reflection of your unique connection.\n\nOur culinary offerings for elopements are equally intimate, with a menu designed to suit your tastes and preferences. From a romantic picnic for two to a gourmet three-course meal, every dish is crafted with love and care.\n\nWith the Intimate Elopement Package, you'll also have access to photographers and videographers who specialize in capturing the essence of intimate celebrations. The result? A collection of photos and videos that chronicle the depth of your love in every frame.\n\nIf the idea of an intimate and heartfelt elopement speaks to your soul, then our Intimate Elopement Package is perfect for you. Click 'Learn More' to explore the full details and embark on a journey of love, simplicity, and profound connection."
+      "service": "Service providers, such as caterers, venue rentals, entertainment professionals, photographers, decorators, and event coordinators, collaborate to orchestrate a seamless and unforgettable reception experience."
     }
   ]
 }
+
+
+
