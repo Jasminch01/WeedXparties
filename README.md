@@ -2,7 +2,7 @@
 
 ## Projects Features :
 
-- Clients choose their chosen service of the weeding event management and use active route client or user esey to know where they are location of the page.
+- Clients choose their chosen service of wedding event management service. and users easily know which page they are on. For using the react active routes.
 
  - The projects use firebase user authentications system.Users can use the authentication system for the getting event service and they can see the profile picture and name when they are log in with google and sign up with email password name and photo url.
 
