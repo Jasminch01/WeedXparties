@@ -1,8 +1,11 @@
 # WedXpertise
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Projects Features :
 
-Currently, two official plugins are available:
+- Clients choose their chosen service of the weeding event management and use active route client or user esey to know where they are location of the page.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+ - The projects use firebase user authentications system.Users can use the authentication system for the getting event service and they can see the profile picture when they are log in with google and sign up with email password name and photo url.
+
+ - Why user's log in ? user's log in because log in users given many features. if a user not log in or dont have an account they are not see the gallary image and they should not contact with us.
+
+ - logged in user can only see of the servece details and they contact for event services and and they are able to access of privete routes.
