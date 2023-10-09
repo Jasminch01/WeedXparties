@@ -1,13 +1,14 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
+const all = import.meta.env;
 const firebaseConfig = {
-  apiKey: "AIzaSyCdNfHw4yiomZlKkxddCYlq7IS-fUzGGiQ",
-  authDomain: "wedxpertes.firebaseapp.com",
-  projectId: "wedxpertes",
-  storageBucket: "wedxpertes.appspot.com",
-  messagingSenderId: "576716106366",
-  appId: "1:576716106366:web:28c73aa264c8b80dc5c62f"
+  apiKey: all.VITE_apiKey,
+  authDomain: all.VITE_authDomain,
+  projectId: all.VITE_projectId,
+  storageBucket: all.VITE_storageBucket,
+  messagingSenderId: all.VITE_messagingSenderId,
+  appId: all.VITE_appId,
 };
 
 // Initialize Firebase

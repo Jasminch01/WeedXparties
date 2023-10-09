@@ -103,19 +103,19 @@ const Navbar = () => {
                     : defaultProfile
                 }
                 alt=""
-                className="w-10 rounded-full"
+                className="w-10 rounded-full ring-2 ring-green-500 outline-offset-2"
               />
             </label>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-32 absolute right-0"
+              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-32 absolute right-0  md:-right-24"
             >
               <li className="cursor-pointer hover:bg-slate-300 p-3">
                 {user?.displayName ? user.displayName : "User"}
               </li>
               <li className="cursor-pointer hover:bg-slate-300 p-3">Profile</li>
               <li className="cursor-pointer hover:bg-slate-300 p-3">Setting</li>
-              <li className="cursor-pointer hover:bg-slate-300 p-3">{!user ? (
+              <li className="cursor-pointer hover:bg-slate-300 p-3 md:hidden ">{!user ? (
               <Link
                 to="/login"
                 className="cursor-pointer"

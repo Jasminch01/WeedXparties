@@ -15,7 +15,6 @@ const Login = () => {
 
   const location = useLocation();
   const navigate  = useNavigate();
-  console.log(location)
 
   const handleSignIn = (e) => {
     e.preventDefault();
