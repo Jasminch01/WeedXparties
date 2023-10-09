@@ -7,7 +7,7 @@ const Gallery = () => {
   const {images} = useContext(ContextProvider);
   useEffect(() => {
     AOS.init({
-      duration: 2000, 
+      duration: 1000, 
 
     });
   }, []);
